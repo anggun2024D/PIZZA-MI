@@ -1,0 +1,101 @@
+# welcome to pizza informatic management
+print("welcome to pizza informatic management")
+print("=======================================\n")
+
+# What pizza toppings would you like to order?
+def pizza_store():
+    print("What pizza toppings would you like to order?")
+    topping_1 = "frankfurter"
+    topping_2 = "meat monsta"
+    topping_3 = "super supreme chicken"
+    topping_4 = "tuna cheesy bites"
+
+    crust_1 = "pan pizza"
+    crust_2 = "stuffed crust sosis"
+    crust_3 = "crowncrust"
+    crust_4 = "cheesy bites"
+
+    size_1 = "personal"
+    size_2 = "medium"
+    size_3 = "large"
+    
+       
+    toppings_pizza = input("choose pizza toppings: ")
+    total_price = 0
+    
+
+    if toppings_pizza == topping_1:
+       print("price of frankfurter topping is 10000")
+       total_price += 10000
+       print("========================================\n")
+    elif toppings_pizza == topping_2:
+        print("price of meat monsta topping is 15000")
+        total_price += 15000
+        print("========================================\n")
+    elif toppings_pizza == topping_3:
+        print("price of super supreme chicken topping is 20000")
+        total_price += 20000
+        print("========================================\n")
+    elif toppings_pizza == topping_4:
+        print("price of tuna cheesy bite topping is 25000")
+        total_price += 25000
+        print("========================================\n")
+    else:
+        print("you dont choose the topping")
+        print("=====================================================\n")
+        
+        print("What crust do you want to order?")
+            
+    crust_pizza = input("choose crust pizza: ")
+    
+    if crust_pizza == crust_1:
+        print("price of pan pizza is 15000")
+        total_price += 15000
+        print("========================================\n")
+    elif crust_pizza == crust_2:
+        print("price of stuffed crust sosis is 25000")
+        total_price += 25000
+        print("========================================\n")
+    elif crust_pizza == crust_3:
+        print("price of crowncrust is 20000")
+        total_price += 20000
+        print("========================================\n")
+    elif crust_pizza == crust_4:
+        print("price of cheesy bite is 30000")
+        total_price += 30000
+        print("========================================\n")
+    else:
+        print("you dont choose the crust")
+        ("======================================\n")
+    
+    print("What size do you want to order?")
+    
+    size_pizza = input("choose size pizza: ")
+    
+
+    if size_pizza == size_1:
+       print("price of personal pizza is 10000")
+       total_price += 10000
+       print("========================================\n")
+    elif size_pizza == size_2:
+        print("price of medium pizza is 20000")
+        total_price += 20000
+        print("========================================\n")
+    elif size_pizza == size_3:
+        print("price of large pizza is 30000")
+        total_price += 30000
+        print("========================================\n")
+    else:
+        print("you dont choose the size") 
+        print("=================================\n") 
+
+    cheese = input("Do you want extra cheese?") 
+
+    if cheese == "yes":
+        print("Price of extra cheese is 13000")
+        total_price += 13000
+        
+    print("Thank you for choosing Pizza Informatic Management !!!")
+    print(f"Your final bill is : {total_price}")
+
+pizza_store()
